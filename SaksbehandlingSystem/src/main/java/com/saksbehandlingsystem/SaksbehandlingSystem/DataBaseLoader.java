@@ -16,7 +16,6 @@ public class DataBaseLoader implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        this.repository.save(new Sak("En liten saksbeskrivelse", "En liten sakstittel", "En liten dato"));
 
     }
 }
