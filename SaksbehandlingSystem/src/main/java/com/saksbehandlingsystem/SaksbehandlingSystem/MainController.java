@@ -31,4 +31,22 @@ public class MainController {
         // This returns a JSON or XML with the users
         return sakRepostiory.findAll();
     }
+
+    @GetMapping(path="/amount")
+    public @ResponseBody Long findById() {
+        // This returns the number of sak created
+        return sakRepostiory.count();
+    }
+
+    @GetMapping(path="/KILL-ALL-SAKS")
+    public @ResponseBody String thisShouldReallyBePrivate() {
+        // This returns the number of sak created
+        sakRepostiory.deleteAll();
+        return "they dead";
+
+    }
+
+
+
+
 }
